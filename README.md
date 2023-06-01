@@ -166,7 +166,12 @@ Keep the changes you think are appropriate, and then `Mark as resolved`. You wil
 <img src="./images_readme/browser_mark_as_resolved.png" width="600" >
 &nbsp;<br>
 &nbsp;<br>
-
+After resolving conflicts, it is always a good idea to do a `git pull` in your local repository, so that the changes you made in the browser are tracked in your local repository as well.
+&nbsp;<br>
+&nbsp;<br>
+<img src="./images_readme/pull.png" width="600" >
+&nbsp;<br>
+&nbsp;<br>
 ## Merging a pull request
 Go to the page of the pull request as described above, scroll down until you reach the `Merge pull request` button, and if all conditions are met, you can click on the button. After that click `Confirm merge`.
 &nbsp;<br>
