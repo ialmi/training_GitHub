@@ -75,6 +75,9 @@ As soon as you save changes to files tracked in the repository, git notices them
 
 First, you need to add the changed files to the index. You are hereby staging them for commit. You can either stage a file or subfolder with `git add <path/to/file/or/folder>`, or stage all new changes with `git add .`
 
+Then you can commit them to the local repository with the `git commit` command. Every commit has to have a commit message, and it's better to add it at the end of the commit command with `git commit -m <"an informative commit message">`.
+You can also do everything in one go by calling `git commit -a -m <"an informative commit message">` (notice the `-a`, standing for add). This will only work if you want to stage and commit files that are already being tracked. If you created new files, you will need to call the `git add` command before you do `git commit`.
+
 &nbsp;<br>
 <img src="./images_readme/commit.png" width="600" >
 &nbsp;<br>
@@ -85,10 +88,68 @@ The changes are now saved in your local repository (you saved a snapshot of your
 &nbsp;<br>
 
 ## Making a pull request
-
+When your branch is ready and you want to make it part of the production code, you make a pull request. We do this on github, in the browser. Go to the page of your repository and click on `branches`.
+&nbsp;<br>
+&nbsp;<br>
+<img src="./images_readme/browser_branches.png" width="600" >
+&nbsp;<br>
+&nbsp;<br>
+This will take you to a list of branches. Click `New pull request` for the branch you want to submit for review.
+&nbsp;<br>
+&nbsp;<br>
+<img src="./images_readme/browser_make_pr.png" width="600" >
+&nbsp;<br>
+&nbsp;<br>
+In the next screen you can ask for reviewers, and create the pull request.
+&nbsp;<br>
+&nbsp;<br>
+<img src="./images_readme/browser_make_pr_request_review.png" width="600" >
+&nbsp;<br>
 
 ## Resolving conflicts
 
 ## Reviewing a pull request
+On the main page of your repository, click on `Pull requests`.
+&nbsp;<br>
+&nbsp;<br>
+<img src="./images_readme/browser_PRs.png" width="600" >
+&nbsp;<br>
+&nbsp;<br>
+Select the pull request
+&nbsp;<br>
+&nbsp;<br>
+<img src="./images_readme/browser_PR_to_review.png" width="600" >
+&nbsp;<br>
+&nbsp;<br>
+You can first look at `Files changed`.
+&nbsp;<br>
+&nbsp;<br>
+<img src="./images_readme/browser_PR_files_changed.png" width="600" >
+&nbsp;<br>
+&nbsp;<br>
+Here you can see how many lines of code were deleted and added, and you can add comments by clicking on the `+` sign.
+&nbsp;<br>
+&nbsp;<br>
+<img src="./images_readme/browser_PR_files_changed_comparison.png" width="600" >
+&nbsp;<br>
+&nbsp;<br>
+When you add the first comment, you can `Start a review`. This means that all the comments in this review will be `Pending` until you submit the review. The author receives the whole review at once.
+&nbsp;<br>
+&nbsp;<br>
+<img src="./images_readme/browser_start_review.png" width="600" >
+&nbsp;<br>
+&nbsp;<br>
+When you are finished adding your comments, you can `Finish your review` and decide whether to `Approve`, `Request changes`, or just `Comment`. In some cases, one or several approving reviews are necessary in order to be able to merge a pull request. Authors cannot submit approving reviews, but they can merge their own pull requests, once all conditions are met.
+&nbsp;<br>
+&nbsp;<br>
+<img src="./images_readme/browser_finish_review.png" width="600" >
+&nbsp;<br>
+&nbsp;<br>
 
 ## Merging a pull request
+Go to the page of the pull request as described above, scroll down until you reach the `Merge pull request` button, and if all conditions are met, you can click on the button. After that click `Confirm merge`.
+&nbsp;<br>
+&nbsp;<br>
+<img src="./images_readme/browser_merge.png" width="600" >
+&nbsp;<br>
+&nbsp;<br>
