@@ -106,8 +106,6 @@ In the next screen you can ask for reviewers, and create the pull request.
 <img src="./images_readme/browser_make_pr_request_review.png" width="600" >
 &nbsp;<br>
 
-## Resolving conflicts
-
 ## Reviewing a pull request
 On the main page of your repository, click on `Pull requests`.
 &nbsp;<br>
@@ -143,6 +141,29 @@ When you are finished adding your comments, you can `Finish your review` and dec
 &nbsp;<br>
 &nbsp;<br>
 <img src="./images_readme/browser_finish_review.png" width="600" >
+&nbsp;<br>
+&nbsp;<br>
+
+## Resolving conflicts
+Sometimes, there are conflicts between the changes in the new pull request, and the changes made on the main branch in the meantime. You will not be able to merge a pull request without resolving the conflicts.
+On the page of the pull request, you have to scroll down a bit, until you reach the summary of the pull request. Here you can see that conflicts have been detected and that the `Merge pull request` button is inactive.
+&nbsp;<br>
+&nbsp;<br>
+<img src="./images_readme/browser_conflicts.png" width="600" >
+&nbsp;<br>
+&nbsp;<br>
+Clicking on `Resolve conflicts` will take you to a page where you can see the conflicting lines of code. Conflicts appear when the same line(s) of code were changed simultaneously*.
+&nbsp;<br>
+*simultaneously means, in this case, that while we were working on a branch, the main branch was changed at the same location.
+&nbsp;<br>
+&nbsp;<br>
+<img src="./images_readme/browser_resolve_conflicts.png" width="600" >
+&nbsp;<br>
+&nbsp;<br>
+Keep the changes you think are appropriate, and then `Mark as resolved`. You will need to `Commit merge` so that the branch now tracks a snapshot of this change. 
+&nbsp;<br>
+&nbsp;<br>
+<img src="./images_readme/browser_mark_as_resolved.png" width="600" >
 &nbsp;<br>
 &nbsp;<br>
 
