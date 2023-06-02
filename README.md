@@ -54,7 +54,6 @@ Now the repository is in the destination folder, and you can navigate into it
 <img src="./images_readme/clone_repo_CLI.png" width="600" >
 &nbsp;<br>
 
-
 ## Working on a branch
 It is always a good idea to not work on `main` when you make changes to the code. That way, the production is not affected while you develop, experiment and test your code. This is why you need to create a branch or check out an existing one. 
 
@@ -70,13 +69,20 @@ You also can create and directly move to the new branch by calling `git checkout
 <img src="./images_readme/clone_repo_CLI.png" width="600" >
 &nbsp;<br>
 
+## Working in the local repository
+Before you change code:
+1. Make sure you are on the right branch by calling `git branch` or `git status`
+2. Make sure you have the latest version of the code by doing `git pull`
+
 ## Tracking your work
 As soon as you save changes to files tracked in the repository, git notices them. However, they are not added to the index yet. You can always check where you stand by calling `git status`.
 
-First, you need to add the changed files to the index. You are hereby staging them for commit. You can either stage a file or subfolder with `git add <path/to/file/or/folder>`, or stage all new changes with `git add .`
+First, you need to add the changed files to the index. You are hereby staging them for commit. You can either stage a file or subfolder with `git add <path/to/file/or/folder>`, or stage all new changes with `git add .` (notice the dot)
 
 Then you can commit them to the local repository with the `git commit` command. Every commit has to have a commit message, and it's better to add it at the end of the commit command with `git commit -m <"an informative commit message">`.
 You can also do everything in one go by calling `git commit -a -m <"an informative commit message">` (notice the `-a`, standing for add). This will only work if you want to stage and commit files that are already being tracked. If you created new files, you will need to call the `git add` command before you do `git commit`.
+&nbsp;<br>
+A commit is a like a point in history/a story to which your work can "travel" back to. It is handy to have a clear commit message to better find the changes you are looking for. Also it is better to commit only a few related changes at the same time.
 
 &nbsp;<br>
 <img src="./images_readme/commit.png" width="600" >
