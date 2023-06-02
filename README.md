@@ -79,7 +79,7 @@ As soon as you save changes to files tracked in the repository, git notices them
 
 First, you need to add the changed files to the index. You are hereby staging them for commit. You can either stage a file or subfolder with `git add <path/to/file/or/folder>`, or stage all new changes with `git add .` (notice the dot)
 
-Then you can commit them to the local repository with the `git commit` command. Every commit has to have a commit message, and it's better to add it at the end of the commit command with `git commit -m <"an informative commit message">`.
+Then you can commit them to the local repository with the `git commit` command. A commit is a change in the history of your work to which you can travel back to. Therefor it is good practice to have a very informative commit message, to better find the work you want to revert, using: `git commit -m <"an informative commit message">`. Also it then might be handy to not have too many changes in 1 commit.
 You can also do everything in one go by calling `git commit -a -m <"an informative commit message">` (notice the `-a`, standing for add). This will only work if you want to stage and commit files that are already being tracked. If you created new files, you will need to call the `git add` command before you do `git commit`.
 &nbsp;<br>
 A commit is a like a point in history/a story to which your work can "travel" back to. It is handy to have a clear commit message to better find the changes you are looking for. Also it is better to commit only a few related changes at the same time.
