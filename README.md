@@ -29,7 +29,7 @@ For this we will use *GitBash* or *Command Prompt*.
 - `git add <files_to_be_added>` -  adds files to the index; the changes are tracked now
 - `git add .` - adds all files and folders to the index
 - `git commit -m <"commit message">` - commits changes to the local repository; you just saved a snapshot of your work
-- `git commit -a -m <"commit message">` - adds changes of already tracked files to the index and commits them; new files will not be added
+- `git commit -a -m <"commit message">` or `git commit -am <"commit message">` - adds changes of already tracked files to the index and commits them; new files will not be added
 - `git push` - pushes the latest commit to the remote repository; everyone with access to the repository can see your code now
 
 ## Cloning a repository
@@ -79,7 +79,7 @@ As soon as you save changes to files tracked in the repository, git notices them
 
 First, you need to add the changed files to the index. You are hereby staging them for commit. You can either stage a file or subfolder with `git add <path/to/file/or/folder>`, or stage all new changes with `git add .` (notice the dot)
 
-Then you can commit them to the local repository with the `git commit` command. A commit is a point in the history of your work to which you can travel back. Therefore it is good practice to have a very informative commit message. This way you can find the work you want to revert to easily. Type `git commit -m <"an informative commit message">`.Also it is better to commit only a few related changes at the same time.
+Then you can commit them to the local repository with the `git commit` command. A commit is a point in the history of your work to which you can travel back. Therefore it is good practice to have a very *informative* commit message. This way you can find the work you want to revert to easily. Type `git commit -m <"an informative commit message">`.Also it is better to commit only a few related changes at the same time.
 &nbsp;<br>
 You can also do everything in one go by calling `git commit -a -m <"an informative commit message">` (notice the `-a`, standing for add). This will only work if you want to stage and commit files that are already being tracked. If you created new files, you will need to call the `git add` command before you do `git commit`.
 &nbsp;<br>
